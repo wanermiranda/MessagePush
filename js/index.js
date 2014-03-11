@@ -16,6 +16,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+var regid = '';
 var app = {
     // Application Constructor
     initialize: function() {
@@ -62,8 +63,9 @@ var app = {
             case 'registered':
                 if ( e.regid.length > 0 )
                 {
-                    console.log("Regid " + e.regid);
+                    console.log("Regid " + e.regid);					
                     alert('registration id = '+e.regid);
+					regid = e.regid; 
                 }
                 break;
 
